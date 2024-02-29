@@ -2,7 +2,6 @@ data class Transaction(val category: String, val type: String, val amount: Int)
 
 var balance = 0
 var transactions = mutableListOf<Transaction>()
-
 fun main() {
     val command0 = "Exit"
     val command1 = "Add expense"
@@ -23,7 +22,6 @@ fun main() {
         println("===========================")
 
         val input = readLine()
-//        println("*** *** ***")
         when (input) {
             "0" -> return
             "1" -> {
@@ -51,7 +49,6 @@ fun main() {
             }
             else -> println("Unknown command. Please use 0, 1, 2, 3, or 4.")
         }
-//        println("*** *** ***\n")
     }
 }
 
