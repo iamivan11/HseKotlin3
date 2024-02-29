@@ -1,5 +1,3 @@
-package com.example.console1_expensetracker
-
 data class Transaction(val category: String, val type: String, val amount: Int)
 
 var balance = 0
